@@ -21,4 +21,10 @@ class Task {
   void addContent(String content) {
     contents.insert(0, content);
   }
+
+  // addCategory adds a custom category
+  // to the List categories.
+  void addCategory(String category) {
+    categories.add(category);
+  }
 }

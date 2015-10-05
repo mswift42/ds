@@ -19,4 +19,10 @@ void main() {
     expect(t1.contents.length, 2);
     expect(t1.contents[0], 'second content');
   });
+  test('Adding a custom category adds it to categories', () {
+    var t1 = new Task('task1');
+    t1.addCategory('holiday');
+    expect(t1.categories.length, 8);
+    expect(t1.categories.contains('holiday'), true);
+  });
 }
