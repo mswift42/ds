@@ -7,7 +7,7 @@ void main() {
     expect(t1.summary, 'task1');
     expect(t1.contents.length, 0);
     expect(t1.scheduled, null);
-    expect(t1.categories.length, 0);
+    expect(t1.categories.length, 7);
   });
   test('Adding a content inserts into contents', () {
     var t1 = new Task('task1');
