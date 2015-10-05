@@ -25,4 +25,10 @@ void main() {
     expect(t1.categories.length, 8);
     expect(t1.categories.contains('holiday'), true);
   });
+  test('categoryBackground returns the color code for a task category', () {
+    var t1 = new Task('task1');
+    expect(t1.categoryBackground('work'), "#112211");
+    expect(t1.categoryBackground('travel'), '#b3534b');
+    expect(t1.categoryBackground('holiday'), '#888888');
+  });
 }
