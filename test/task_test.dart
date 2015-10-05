@@ -8,6 +8,9 @@ void main() {
     expect(t1.contents.length, 0);
     expect(t1.scheduled, null);
     expect(t1.categories.length, 7);
+    expect(t1.categories.contains('work'), true);
+    expect(t1.categories.contains('travel'), true);
+    expect(t1.categories.contains('holiday'), false);
   });
   test('Adding a content inserts into contents', () {
     var t1 = new Task('task1');
