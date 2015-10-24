@@ -19,4 +19,4 @@ transformers:
     entry_points: web/main.dart
 - dart_to_js_script_rewriter
 - bootstrap:
-   url: //maxcdn.bootstrapcdn.com/bootstrap/3.3.4
+   url: //maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha
