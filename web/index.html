@@ -4,33 +4,25 @@
     <title>Getting Started</title>
     <script async src="main_app.dart" type="application/dart"></script>
     <script async src="packages/browser/dart.js"></script>
-    <link rel="stylesheet"
-          href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.0/angular-material.min.css">
+    <!-- include the stylesheets -->
+    <link rel="stylesheet" href="packages/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="packages/bootstrap/css/bootstrap-theme.css">
 
+    <!-- include the javascript -->
+    <script src="packages/bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<md-content>
-    <md-toolbar>
-        <div class="md-toolbar-tools">
-            <md-button class="md-icon-button" aria-label="Settings">
-                <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
-            </md-button>
-            <h2>
-                <span>Toolbar with Icon Buttons</span>
-            </h2>
-            <span flex></span>
-            <md-button class="md-icon-button" aria-label="Favorite">
-                <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" aria-label="More">
-                <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
-            </md-button>
-        </div>
-    </md-toolbar>
-</md-content>
+<nav class="navbar navbar-default" role="navigation" bs-navbar>
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">Days</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li data-match-route="/$"><a href="#/">Home</a></li>
+    </ul>
+</nav>
 <my-app>Loading...</my-app>
 </body>
 </html>
