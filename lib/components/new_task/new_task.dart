@@ -5,8 +5,8 @@ import 'package:angular2/angular2.dart';
 
 @Component(
     selector: 'new-task',
-    template: '''<div class=".form-control">
-                 <input #tsummary type="text"  class="form-control"
+    template: '''<div class="form-control">
+                 <input  type="text"  class="form-control"
                   placeholder="Add Summary"
                   (keyup)="doneTyping(\$event)"/>
                  </div>''')

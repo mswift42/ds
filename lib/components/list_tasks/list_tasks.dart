@@ -6,14 +6,9 @@ import 'package:ds/components/list_task/list_task.dart';
 
 @Component(
     selector: 'list-tasks',
-    template:
-    '''<div class="tasklist">
-    <ul>
-    <li *ng-for="#task of tasklist">
-        <list-task summary="{{task.summary}}"></list-task>
-        </li>
-        </ul>
-        </div>''',
+    templateUrl: 'listtasks.html',
     directives: const [ListTask, NgFor])
 
-class ListTasks {}
+class ListTasks {
+    List<String> tasklist =  ["somestuff", "morestuff"];
+}
