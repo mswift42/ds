@@ -8,7 +8,8 @@ import 'package:ds/Task.dart';
 @Component(
     selector: 'list-tasks',
     templateUrl: 'listtasks.html',
-    directives: const [ListTask, NgFor])
+    directives: const [ListTask, NgFor]
+)
 
 
 class ListTasks {

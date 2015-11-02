@@ -1,7 +1,7 @@
 <div class="tasklist">
     <ul>
         <li *ng-for="#task of tasklist">
-            <div>{{task.summary}}</div>
+           <list-task summary="{{task.summary}}"></list-task>
         </li>
     </ul>
 </div>
