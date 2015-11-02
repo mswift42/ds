@@ -1,4 +1,4 @@
-import 'package:angular2/angular2.dart' show Component, bootstrap;
+import 'package:angular2/angular2.dart' ;
 import 'package:angular2/bootstrap.dart';
 import 'package:ds/components/new_task/new_task.dart';
 import 'package:ds/components/list_tasks/list_tasks.dart';
